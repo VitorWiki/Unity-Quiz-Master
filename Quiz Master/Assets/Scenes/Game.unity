@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8947049}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1794249801}
+        m_TargetAssemblyTypeName: Quiz, Assembly-CSharp
+        m_MethodName: OnAnswerSelected
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8947049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,7 +610,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 139264987}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1794249801}
+        m_TargetAssemblyTypeName: Quiz, Assembly-CSharp
+        m_MethodName: OnAnswerSelected
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &139264987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -888,7 +912,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 451036047}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1794249801}
+        m_TargetAssemblyTypeName: Quiz, Assembly-CSharp
+        m_MethodName: OnAnswerSelected
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &451036047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1305,7 +1341,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1110127230}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1794249801}
+        m_TargetAssemblyTypeName: Quiz, Assembly-CSharp
+        m_MethodName: OnAnswerSelected
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1110127230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1739,6 +1787,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: {fileID: 1844314654}
   question: {fileID: 11400000, guid: 0c440c49c126add48b182e9fd4afacae, type: 2}
+  answerButtons:
+  - {fileID: 8947046}
+  - {fileID: 451036044}
+  - {fileID: 139264984}
+  - {fileID: 1110127227}
+  defaultAnswerSprite: {fileID: 21300000, guid: 3f3ac464de22a0d45af77919768e167b, type: 3}
+  correctAnswerSprite: {fileID: 21300000, guid: e82f579aecec71b4fa57162a10eee034, type: 3}
 --- !u!1 &1844314652
 GameObject:
   m_ObjectHideFlags: 0
