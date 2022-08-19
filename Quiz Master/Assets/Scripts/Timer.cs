@@ -5,14 +5,21 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     [SerializeField] float timeToCompleteQuestion = 30f;
-    [SerializeField] float timeToShowCorrectQuestion = 10f;
+    [SerializeField] float timeToShowCorrectAnswer = 10f;
 
-    public bool isAsweringQuestion = false;
+    public bool loadNextQuestion;
+    public bool isAsweringQuestion;
+    public float fillFraction;
     float timerValue;
     
     void Update()
     {
         UpdateTimer();
+    }
+
+    public void CancelTimer() 
+    {
+        timerValue = 0;
     }
 
     void UpdateTimer()
@@ -24,7 +31,11 @@ public class Timer : MonoBehaviour
             if(timerValue <= 0)
             {
                 isAsweringQuestion = false;
-                timerValue = timeToShowCorrectQuestion;
+                timerValue = timeToShowCorrectAnswer;
+            }
+            else
+            {
+                fillFraction = timerValue / timeToCompleteQuestion;
             }
         }
         else
@@ -33,9 +44,14 @@ public class Timer : MonoBehaviour
             {
                 isAsweringQuestion = true;
                 timerValue = timeToCompleteQuestion;
+                loadNextQuestion = true;
+            }
+            else
+            {
+                fillFraction = timerValue / timeToShowCorrectAnswer;
             }
         }
         
-        Debug.Log(timerValue);
+        Debug.Log(isAsweringQuestion + ": " + timerValue + " = " + fillFraction);
     }
 }
